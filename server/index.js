@@ -18,4 +18,4 @@ app.get("/", (req, res) => res.json({msg: "hello world after the class"}));
 // DONT MISUSE THIS THANKYOU!!
 mongoose.connect('mongodb+srv://gchaitanya1419:Chaitanya14@cluster0.bpwbtja.mongodb.net/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(4000, () => console.log('Server running on port 4000'));
