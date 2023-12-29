@@ -1,13 +1,22 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import HomeLogin from '../Home/HomeLogin';
 import HomeLogout from '../Home/HomeLogout';
 import AddCourse from '../AddCourse/AddCourse';
 import Courses from '../Courses/Courses';
 
 const Navbar = () => {
-  const logout = () => console.log("logout successful returned to homepage")
+  const navigate  = useNavigate()
+  const logout = () =>  {
+    //localStorage.removeItem('token');
+    console.log("Logout Succesful")
+    navigate('/')
+
+  }
+  
+  //upon clicking logout use useNavigate and to send the user  back to page where user is navbar notLoged in 
 
 
   return (
